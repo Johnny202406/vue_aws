@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Carreras</h1>
+    <h1>Productos</h1>
     <div class="box">
       <RouterLink to="/">Ir al dashboard</RouterLink>
       <span class="message">{{ message }}</span>
