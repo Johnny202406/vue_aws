@@ -78,7 +78,7 @@ const seedCarreras = async (number) => {
 }
 
 
-const envioData = async (numero) => {
+export const envioData = async (numero) => {
     await seedCarreras(numero)
 }
 const number = 5

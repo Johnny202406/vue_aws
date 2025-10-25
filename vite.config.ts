@@ -17,7 +17,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['tslib']
+      // external: ['tslib']
     }
   },
   resolve: {
@@ -25,4 +25,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+   base: '/vue_aws/',
 })

@@ -1,9 +1,23 @@
-import { createRouter, createWebHistory } from 'vue-router/auto'
-import { routes } from 'vue-router/auto-routes'
+import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
+import Home from '../pages/Home.vue'
+import Producto from '../pages/producto/index.vue'
 
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/producto/',
+    name: 'Producto',
+    component: Producto,
+    props: true
+  }
+]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/vue_aws/'), // tu base URL en GitHub Pages
   routes
 })
 
